@@ -9,14 +9,15 @@ public enum StatusEnum {
     NEW("new"),
     COMPLETE("complete");
     private final String value;
-public static StatusEnum fromValue(String value){
-    for (StatusEnum status : StatusEnum.values()){
-        if (status.getValue().equals(value)){
-            return status;
-        }
 
+    public static StatusEnum fromValue(String value) {
+        for (StatusEnum status : StatusEnum.values()) {
+            if (status.getValue().equals(value)) {
+                return status;
+            }
+
+        }
+        return null;
     }
-    return null;
-}
 
 }

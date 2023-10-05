@@ -22,7 +22,7 @@ public class CardController {
 
     @GetMapping("/")
     public ResponseEntity<List<Card>> getAll() {
-        return ResponseEntity.ok(cardService.getAll());
+        return ResponseEntity.ok(cardService.findAll());
     }
 
     @PostMapping("/")
